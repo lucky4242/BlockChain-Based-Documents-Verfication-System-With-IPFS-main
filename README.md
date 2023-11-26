@@ -1,24 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-<!-- [![Contributors][contributors-shield]][contributors-url] -->
-<!-- [![Forks][forks-shield]][forks-url] -->
-<!-- [![Stargazers][stars-shield]][stars-url] -->
-<!-- [![Issues][issues-shield]][issues-url] -->
-<!-- [![MIT License][license-shield]][license-url] -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -28,7 +9,6 @@
   </a>
 
   <h3 align="center">BlockChain Based Documents Verfication System With-IPFS</h3>
-
 
 This project aims to create a secure and decentralized system for document verification using Blockchain and InterPlanetary File System (IPFS) technologies. The system stores the hash of the documents in the Blockchain network and the documents themselves in the IPFS network. This ensures that the documents cannot be tampered with or altered, and they can be easily retrieved and verified by authorized parties.
 
@@ -48,18 +28,15 @@ This project aims to create a secure and decentralized system for document verif
 
 ## Installation
 
-1. Clone this repository: 
-``https://github.com/DevAloshe/BlockChain-Based-Documents-Verfication-System-With-IPFS-main``
-
+1. Clone this repository:
+   `https://github.com/DevAloshe/BlockChain-Based-Documents-Verfication-System-With-IPFS-main`
 
 2. Install the required packages:
 
-``cd BlockChain-Based-Document-Verfication-With-IPFS
-npm install``
-
+`cd BlockChain-Based-Document-Verfication-With-IPFS
+npm install`
 
 3. Open the application in your browser using Liver Server Extension .
-
 
 ## Usage
 
@@ -75,11 +52,8 @@ npm install``
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Acknowledgments
+
 - Metamask documentation
 - Solidity and Web3.js documentation
 - IPFS documentation
 - Truffle documentation
-
-
-
-

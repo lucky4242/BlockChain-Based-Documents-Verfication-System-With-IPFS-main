@@ -28,14 +28,25 @@
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>OrioChain Team</title>
+    <title>OAUSTECHChain Team</title>
     <link rel="stylesheet" href="./css/loader.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="./css/aos.min.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
 
   </head>
-
+  <style>
+    table, th, td {
+      color: white;
+      border:1px solid white;
+    }
+    tr th{
+      text-align: center;
+    }
+    tr td{
+      text-align: center;
+    }
+    </style>
   <body>
  <div class="loader-wraper">
   <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -45,7 +56,7 @@
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <i class="fa-solid fa-dragon home_text"></i>
-            <span class="home_text">Orio</span>Chain
+            <span class="home_text">OAUSTECH</span>Chain
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -68,18 +79,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="admin.html">Admin</a>
                 </li>              
-                <li class="nav-item">
+                <!-- <li class="nav-item">
               <a class="nav-link active" href="about.html">Team</a>
-              </li>
+              </li> -->
           </ul>
           </div>
         </div>
         </nav>
     
- 
+        <table id="tab" style="width:100%">
+          <tr>
+            <th>FULLNAME</th>
+            <th>NEW_STUDENT/EMPLOYEE</th>
+            <th>IMAGE_ID</th>
+          </tr>
+          
+        </table>
 
     <!-- Our Developers -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="men d-flex justify-content-center">
         
         <div  data-aos="zoom-in"  class="people">
@@ -135,7 +153,7 @@
         </div>
         
       </div>
-    </div>
+    </div> -->
   
   <!--=====================Footer===========================-->
   <div class="footer-dark">
@@ -160,7 +178,7 @@
           <div class="col-md-6 item text">
             <h3  data-aos="fade-right"> 
                <i class="fa-solid fa-dragon"></i>
-              OrioChain</h3>
+              OAUSTECHChain</h3>
             <!-- <a href="https://www.flaticon.com/free-icons/blockchain" title="blockchain icons">Blockchain icons created by photo3idea_studio - Flaticon</a> -->
             <p  data-aos="zoom-in">
               Praesent sed lobortis mi. Suspendisse vel placerat ligula.
@@ -204,7 +222,7 @@
             <a href="#"><i class="fa-brands fa-instagram"> </i> </a>
           </div>
         </div>
-        <p class="copyright">OrioChain © 2022</p>
+        <p class="copyright">OAUSTECHChain © 2023</p>
       </div>
 
     </footer>
@@ -224,6 +242,27 @@
     <script src="./js/script.js"></script>
   <script defer>
   $(".loader-wraper").fadeOut("slow");
+  </script>
+  <script>
+     if (localStorage.count) {
+     var count =  localStorage.count;
+     var i = 1;
+      while (i<count ) {
+       console.log(localStorage.getItem("hashcode_" + i));
+       i++;
+       $("#tab").append(
+        `<tr>
+          <td>${localStorage.getItem("fullname_" + i)}</td>
+            <td>${localStorage.getItem("profession_" + i)}</td>
+            <td>${localStorage.getItem("hashcode_" + i)}</td>
+          </tr>`
+      );
+      
+      }
+
+
+        // localStorage.count = Number(localStorage.count) + 1;
+      } 
   </script>
   </body>
 </html>
